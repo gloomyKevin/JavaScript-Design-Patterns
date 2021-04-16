@@ -32,3 +32,10 @@ Dog.prototype.sound  = function(){
 
 makeSound(new Duck())
 makeSound(new Dog())
+
+// 添加cat只需要
+function Cat() {}
+Cat.prototype.sound = function() {
+    console.log("喵喵喵-多态")
+}
+makeSound(new Cat())
